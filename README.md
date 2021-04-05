@@ -25,3 +25,7 @@ following operation to synchronize with this repository.
 ```
 git pull origin main --allow-unrelated-histories
 ```
+
+Some Makefile Tutorial websites can be found here:
+
+# https://makefiletutorial.com
