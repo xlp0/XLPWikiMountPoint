@@ -1,0 +1,29 @@
+# The following content was derived from 
+# https://docs.github.com/en/github/getting-started-with-github/configuring-git-to-handle-line-endings
+
+# For Mac OS X execute the following command using git
+# git config --global core.autocrlf input
+
+# For Windows 10, execute the following command:
+# git config --global core.autocrlf true
+
+# For Linux, execute the following command:
+# git config --global core.autocrlf input
+
+# These settings are for any web project
+# Handle line endings automatically for files detected as text
+# and leave all files detected as binary untouched.
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.c text
+*.h text
+*.sh text
+
+# Declare files that will always have CRLF line endings on checkout.
+*.sln text eol=crlf
+
+# Denote all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary
