@@ -16,6 +16,11 @@ pushBinary: InitialContentPackage.tar.gz
 	git commit -m 'Updated the database content'
 	git push
 
+pushMakefile: Makefile
+	git add Makefile
+	git commit -m 'Changed Makefile at ${CURRENT_TIME}'
+	git push
+
 compress: mountPoint/
 	tar -czvf InitialContentPackage.tar.gz mountPoint
 
