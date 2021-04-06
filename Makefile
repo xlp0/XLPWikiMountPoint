@@ -1,20 +1,17 @@
-all:
-	git add .
-	git commit -m 'Commiting all changes'
-	git push
-
-pushGitConfig: .gitattributes .gitignore 
-	git add .
-	git commit -m 'Changed git configurations files'
-	git push
+CURRENT_TIME = $(shell date +'%y.%m.%d %H:%M:%S')
 
 pushDocker: docker-compose.yml
 	git add .
 	git commit -m 'Changed docker-compose.yml'
 	git push
 
+pushGitConfig: .gitattributes .gitignore README.md
+	git add .
+	git commit -m 'Changed git configurations files'
+	git push
+
 pushBinary: InitialContentPackage.tar.gz
-	rm -r mountPoint
+	rm -rf mountPoint/
 	git add .
 	git commit -m 'Updated the database content'
 	git push

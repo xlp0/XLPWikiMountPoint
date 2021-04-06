@@ -1,3 +1,4 @@
 # ignore Mac OS X's temporary files
 .DS_Store
-mountPoint
+mountPoint/
+*.zip

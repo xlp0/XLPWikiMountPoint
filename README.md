@@ -17,5 +17,15 @@ git remote add origin [repo_address]
 git push --mirror --force
 ```
 
-
 [heshanlk]:https://gist.github.com/heshanlk
+
+After doing all these reset operations, other repositories will need to use the 
+following operation to synchronize with this repository.
+
+```
+git pull origin main --allow-unrelated-histories
+```
+
+Some Makefile Tutorial websites can be found here:
+
+# https://makefiletutorial.com
