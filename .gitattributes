@@ -19,7 +19,7 @@
 # to native line endings on checkout.
 *.c text
 *.h text
-*.sh text
+*.sh eol=lf
 
 # Declare files that will always have CRLF line endings on checkout.
 *.sln text eol=crlf
