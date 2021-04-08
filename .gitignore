@@ -1,4 +1,5 @@
 # ignore Mac OS X's temporary files
 .DS_Store
+.vscode/
 mountPoint/
 *.zip
