@@ -253,5 +253,13 @@ wfLoadExtension( '3DAlloy' );
 # Loading Math extension
 wfLoadExtension( 'Math' );
 
+wfLoadExtension( 'GeoData' );
+
+wfLoadExtension( 'JsonConfig' );
+
+wfLoadExtension( 'Kartographer' );
+
+wfLoadExtension( 'EmbedSpotify' );
+
 # The following statement is only used for Semantic MediaWiki 
 # enableSemantics();
